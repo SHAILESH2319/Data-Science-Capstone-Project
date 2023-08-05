@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import pickle
 
-model=pickle.load(open('lr.pkl','rb'))
+model=pickle.load(open('lr (1).pkl','rb'))
 
 def main():
      # Set page config
