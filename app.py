@@ -66,10 +66,11 @@ def main():
 
     x=pd.DataFrame({'year':[p2],'km_driven':[p7],'fuel':[p6],'seller_type':[p3],
                     'transmission':[p5],'owner':[p4]})
-    ok=st.button('Predict Car Price')
-    if ok:
+    final=st.button('Predict Car Price')
+    if final:
         prediction=model.predict(x)
-        st.success('Predicted Car Price:'+str( prediction) +'Rupees')
+        predicted_price_rounded = round(prediction, 2)
+        st.sidebar.success(f'Predicted Price: {predicted_price_rounded} rupee')
        
      
 
