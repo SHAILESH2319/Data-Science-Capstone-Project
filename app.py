@@ -70,9 +70,8 @@ def main():
     final=st.button('Predict Car Price')
     if final:
         prediction=model.predict(x)
-        predicted_price_rounded = round(prediction, 2)
-        st.sidebar.success(f'Predicted Price: {predicted_price_rounded} rupee')
-       
+        prediction=model.predict(x)
+        st.success('Predicted Car Price:'+str( prediction) +'Rupees')
      
 
 if __name__=='__main__':
