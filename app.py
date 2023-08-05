@@ -64,8 +64,8 @@ def main():
 
     p7=(st.slider('KM Driven',500,10000000,500))
 
-    x=pd.DataFrame({'year':[p2],'fuel':[p6],'seller_type':[p3],
-                    'transmission':[p5],'owner':[p4],'km_driven':[p7]})
+    x=pd.DataFrame({'year':[p2],'km_driven':[p7],'fuel':[p6],'seller_type':[p3],
+                    'transmission':[p5],'owner':[p4]})
     ok=st.button('Predict Car Price')
     if ok:
         prediction=model.predict(x)
