@@ -66,8 +66,8 @@ def main():
 
     
 
-    x=pd.DataFrame({'year':[p2],'km_driven':[p7],'fuel':[p6],'seller_type':[p3],
-                    'transmission':[p5],'owner':[p4]})
+    x=pd.DataFrame({'year':[p2],'km_driven':[p3],'fuel':[p7],'seller_type':[p4],
+                    'transmission':[p6],'owner':[p5]})
     final=st.button('Predict Car Price')
     if final:
         prediction=model.predict(x)
